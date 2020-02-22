@@ -1,0 +1,30 @@
+<!--这是除了welcome页面所有页面都包含的头部-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面的头部</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div id="top">
+        <!--logo-->
+        <div id="logoarea"><a href="welcome.html">留言板</a></div>
+        <!--菜单-->
+        <div id="menu">
+        <ul>
+        <li><a href="index.html"><br>浏览留言</a></li>
+        <li><a href="add.html"><br>签写留言</a></li>
+         <!--如果以管理员账号登陆-->
+        <li><a href="admin_login.html"><br>管理留言</a></li>
+        <!--否则--><li><a href="index.html" onclick="if(confirm('您确定要退出吗?')==false) return false;"><br>退出管理</a></li>
+        <li><a href="register.html"><br>注册</a></li>
+        </ul>
+        </div>
+        </div>
+        <div id="foot">
+            @2020 sherman
+            </div>
+</body>
+</html>

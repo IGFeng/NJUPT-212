@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浏览留言</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<!--最外层主要区域开始-->
+<div id="main">
+  <div id="list">
+      <div id="listmain">
+<h2>
+<span class="leftarea">
+<div style="color:#999;">冯大宇于2020-2-22 9:30:00发表留言：</div>
+ <!--如果留言时间和当前时间相差不超过一分钟则出现一个新字的图标 如下-->
+ <img src=""><!--图标可以去www.iconfont.cn找-->
+ <!--如果留言已置顶则出现一个已置顶的图标-->
+ <img src="" alt=已置顶>
+</span>
+<span class="midarea">
+    <!--如果以管理员账号登陆则出现以下功能-->
+        <a href="{{url('verify',['id'=>$message->id,'ac'=>'verify'])}}" onclick="if(confirm('确定审核通过此留言吗?')==false) return false;">审核</a>
+    <a href="{{url('hide',['id'=>$message->id,'ac'=>'hide'])}}" onclick="if(confirm('确定隐藏此留言吗?')==false) return false;">隐藏</a>
+    <a href="{{url('delete',['id'=>$message->id,'ac'=>'delete'])}}" onclick="if(confirm('确定删除此留言吗?')==false) return false;">删除</a>
+    <a href="reply.html" >回复</a>
+    <!--如果留言未置顶则出现置顶选项-->
+    <a href="{{url('settop',['id'=>$message->id,'ac'=>'settop'])}}" onclick="if(confirm('确定置顶此留言吗?')==false) return false;">置顶</a>
+    <a href="{{url('unsettop',['id'=>$message->id,'ac'=>'unsettop'])}}" onclick="if(confirm('确定取消置顶吗?')==false) return false;">取消置顶</a>
+</span>
+</h2>
+<div class="content">
+<!--如果没有以管理员账号登陆-->
+	<!--如果签写此留言时选中为悄悄话则-->
+            <span class=ftcolor_999>（此留言为悄悄话，只有管理员才能看哦……）</span>
+    <!--否则如果未被管理员审核通过或是被此留言被管理员隐藏则-->
+			<span class=ftcolor_999>（此留言正在通过审核，当前不可见……）</span>
+		<!--如果上述情况都没有则输出内容-->
+         兄弟萌加油，搞一个牛逼的不行的页面！！
+<!--如果以管理员账号登陆则直接输出内容-->
+兄弟萌加油，搞一个牛逼的不行的页面！！
+</div>
+<!--如果管理员有回复-->
+<div class="reply"><p><span class="ftcolor_FF9"><b>管理员</b>于2020-2-22 10:00:00回复:</span></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+你在干什么团长！不要停下来啊！
+</div>
+</div><!--listmain结束-->
+</div><!--list结束-->
+<div class="paginate">
+<!--这个输出分页信息 你们可以不用管 当然想美化一下也可-->
+</div>
+<!--最外层主要区域结束-->
+</div>
+</html>
