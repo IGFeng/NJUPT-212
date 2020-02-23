@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>签写留言</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        html,body{
+            /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
+            background-image: linear-gradient(to right, #ffecd2 0%, #ffafbd 100%);   
+         }
+
+        </style>
+</head>
+<body>
+        <div id="main">
+        <div id="submit">
+        <form name="form1" method="post" action="">
+            <!-- lzx -->
+            <div class="add-form-div"><label for="username">昵称:</label><input type="text" id="username" name="message[username]" placeholder="受伤的女人" value=""></div>
+            <div id="add-form-textarea"><label for="content">内容:</label><textarea id="content" name="message[content]" placeholder="“我喝过很烈的酒，也放过不该放的手，从前不会回头，往后不会将就。”" cols="70" rows="9"></textarea></div>
+            <div class="add-form-div">
+                <label for="ifqqh" id="add-form-more">悄悄话:</label>
+                <p id="add-form-explain">仅管理员可见：</p>
+                <input name="message[ifqqh]" type="checkbox" id="ifqqh" value="#f0544d"> 
+                <!-- lzx：改了上面的value没事吧？ -->
+            </div>
+                
+            
+
+            <div class="add-form-div">
+                <input type="submit" id="sbutton" value="确 定">
+            </div>
+            <div class="add-form-div">
+                <input name="message[ac]" type="hidden" id="ac" value="add">
+            </div>
+        </form>
+        </div>
+        </div>
+</body>
+</html>
