@@ -1,0 +1,402 @@
+* {
+    margin:0;
+    padding:0;
+    }
+
+    /* lzx 我搞了一个小时 人都傻了 这里有点问题 还要解决 */
+
+    html,body {
+        font:15px 'Nunito',sans-serif;
+        color:#625F5F;
+/*快来改！！！ line-height:23px; */
+        /* background-color: #ECF5FF; */
+        background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+        background-size: 100% 100%;
+        background-attachment:fixed;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        /* position: fixed; */
+        width: 100%;
+        height: 100%;
+        /* overflow: hidden; */
+    }
+
+    a {
+    /* color:#000; */
+    color: #35495e;
+    text-decoration:none;
+    }
+
+    a:hover {
+    color:#DE6632;
+    text-decoration:underline;
+    }
+
+    .clear {
+    font-size:0;
+    height:0;
+    clear:both;
+    }
+
+    form{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+    /* height: 200px; */
+    /* border: 1px solid #D5E4F4; */
+    /* background:#FFF; */
+    /* padding:10px; */
+    }
+
+
+    form span{
+    color:#666;
+    }
+
+    label{
+        color: #000000;
+        font-size: 19px;
+        text-align:right; 
+        /* margin-left:28px; */
+        /* float: left; */
+        padding:0 7px 0 0;
+        width: 100px;
+        }
+
+    input {
+    font:16px Verdana;
+    width: 300px;
+    padding: 7px;
+    border: 2px;
+    margin-right: 25px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    textarea {
+    font:14px Verdana;
+    resize: none;
+    padding:7px;
+    border: 2px;
+    border-radius: 5px;
+    width: 300px;
+    height: 120px;
+    overflow-y:visible;
+    margin-right: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    #sbutton{
+    margin-top: 5px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    #reply_content,#reply_textarea{
+    padding:6px;
+    height:120px;
+    width:400px;
+    margin: 0 0;
+    font-size: 14px;
+    }
+
+    /* lzx */
+  #reply_nol,#reply_adv{
+      margin: 30px 0px 10px 0px;
+  }
+  #reply_submit{
+      margin: 60px 0;
+  }
+
+
+    br{
+    clear: left;
+    }
+
+    img {
+    border:none;
+    }
+
+    #alertmsg {
+    text-align:center;
+    border: 1px solid #D5E4F4;
+    background:#FFF;
+    padding:12px;
+    }
+
+    #alertmsg a{
+    color:#175CBB;
+    }
+
+    #main{
+        /* lzx */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 80%;
+        margin: 0px auto;
+        /* background:#FFF; */
+        /* padding:20px 20px 20px 20px; */
+    }
+
+    #top{
+    width:660px;
+    margin:0 auto;
+    background:#FFF;
+    padding:8px;
+    }
+
+
+    #top {
+    height:60px;
+    }
+
+    /* lzx */
+    #submit {
+    /* background-color: #F0F8FF; */
+    /* padding: 13px 13px 13px 13px; */
+    /* border-radius: 15px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+    }
+
+    /* lzx */
+    #list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-around;
+    padding:13px 13px 3px 13px;
+    /* background-color: #F0F8FF; */
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: 0 0 14px 0 rgba(0,0,0,.08);
+    }
+
+    #submit img{
+    margin-left:8px;
+    }
+    /* #submit_div {
+    width:320px;
+    margin:0 0;
+    padding:22px;
+    } */
+
+    #submit_set_left {
+    width:120px;
+    margin-left:50px;
+    text-align:center;
+    float:left;
+    }
+
+    #submit_set_left ul{
+    margin:0px;
+    }
+
+    #submit_set_left li {
+    list-style:none;
+    line-height:38px;
+    background:url(../images/class_folder.gif) no-repeat left 12px;
+    }
+
+    #submit_set_right {
+    width:442px;
+    float:left;
+    }
+
+    #listmain{
+    /* border: 1px solid #D5E4F4; */
+    background:#FFF;
+    padding:5px;
+    margin:0px;
+    /* padding-bottom:20px; */
+    }
+
+    #listmain h2,#submit h2{
+    font:15px Verdana;
+    color:#4f98ca;
+        border-top:1px solid #EBF5FE;
+        border-bottom:1px solid #EBF5FE;
+        background:#F4FAFF;
+        padding:3px;
+        font-weight: lighter;
+        height:20px;
+    }
+
+    /* lzx */
+
+    #submit h2{
+    margin-bottom:20px;
+    }
+
+    .leftarea,.midarea,.rightarea {
+    height:20px;
+    line-height:20px;
+    float:left;
+    overflow:hidden;
+    }
+
+    .leftarea {
+        font-size: 14px;
+    padding-left:8px;
+    width:480px;
+    }
+
+    .rightarea {
+    width:66px;
+    text-align:right;
+    }
+
+    .midarea {
+        font-size: 12px;
+    width:140px;
+    text-align:right;
+    }
+
+    .ftcolor_175 {
+    color:#175CBB;
+    }
+
+    .ftcolor_666 {
+    color:#666;
+    }
+
+    .ftcolor_999 {
+    color:#999;
+    font-size: 12px;
+    }
+
+    .ftcolor_FF9 {
+    /* color:#FF9933; */
+    color: #6a8caf;
+    font-size: 14px;
+    }
+
+    .content{
+    margin-left:10px;
+    width:610px;
+    text-indent: 24px;
+    word-wrap: break-word;
+    padding:6px 12px 10px 12px;
+    /* lzx */
+    font-weight: normal;
+    }
+
+    .reply{
+    /* margin-left:65px; */
+    /* border:2px dashed #F8E9E9; */
+    /* background:#f8f8f8; */
+    /* width:520px; */
+    /* width: 610px; */
+    background-color: #f1f9f9;
+    color: #5d6e8b;
+    font-weight: light;
+
+    text-indent:24px;
+    word-wrap:break-word;
+    padding:8px;
+    margin-bottom:10px;
+    }
+
+    #logoarea{
+        height:60px;
+        width:200px;
+        float:left;
+        }
+
+     #menu{
+        padding:3px;
+     }
+
+     #menu ul{
+        list-style:none;
+        float:right;
+        margin-right:20px;
+    }
+
+     #menu li{
+        text-align:center;
+        width:72px;
+        float:left;
+    }
+
+    #foot {
+        padding:8px;
+        text-align:center;
+        margin-bottom:15px;
+        }
+
+    #foot a {
+    color:#175CBB;
+    }
+
+    .pagination{
+        margin-top: 10px;
+        margin-left: 45%;
+    }
+    .pagination li{
+        list-style-type: none;
+        display: inline;
+        padding: 5px;
+        color:red;
+    }
+    #information ul{
+        display:table;
+        margin:0 auto;
+       text-align: center;
+    }
+    #information li{
+        color:red;
+    }
+
+
+    /* lzx */
+    .add-form-div{
+        font-size: 20px;
+        margin: 7px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #add-form-textarea{
+        font-size: 20px;
+        margin: 5px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+    }
+    #add-form-explain{
+        text-align: right;
+        font-size: 15px;
+        color: #6c5b7c;
+        margin-left: 177px;
+    }
+    #add-form-more{
+        font-size: 15px;
+        visibility: hidden;
+    }
+    #ifqqh{
+        display: block;
+        cursor: pointer;
+        width: 20px;
+        padding: 3px 0;
+        border: 2px;
+        height: 20px;
+        background: rgba(240, 84, 77, 0.5);
+    }
